@@ -53,12 +53,12 @@ terragrunt apply-all --terragrunt-working-dir="C:\your\local\directory\path\Terr
 terragrunt destroy-all --terragrunt-working-dir="C:\your\local\directory\path\Terragrunt-Chainlink-External-Adapter-GCP-Cloud-Run" --terragrunt-non-interactive
 ```
 
-Test the cloud run url
+Test the cloud run URL
 ```
 curl --header "Content-Type: application/json" -d '{"id":"2","data": {"base": "LINK", "to": "USD"}}' https://output-trigger-url
 ```
 
-The Coingecko External Adapter is now ready to be added to a Chainlink Node via:
+The Coingecko External Adapter is now ready to be added to a Chainlink Server via:
 
 GUI `http://localhost:6688` -> Bridge -> New Bridge 
 
