@@ -58,7 +58,9 @@ Test the cloud run url
 curl --header "Content-Type: application/json" -d '{"id":"2","data": {"base": "LINK", "to": "USD"}}' https://output-trigger-url
 ```
 
-The Coingecko External Adapter is now ready to be added to a Chainlink Node via GUI `http://localhost:6688` -> Bridge -> New Bridge 
+The Coingecko External Adapter is now ready to be added to a Chainlink Node via:
+
+GUI `http://localhost:6688` -> Bridge -> New Bridge 
 
 
 # References
