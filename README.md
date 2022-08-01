@@ -62,6 +62,15 @@ The Coingecko External Adapter is now ready to be added to a Chainlink Server vi
 
 GUI `http://localhost:6688` -> Bridge -> New Bridge 
 
+## Incorporation into Github Actions CI/CD:
+
+This repo can be cloned and Terraform related commands to be executed automatically on pushes/updates to the main/master branch with Github Actions. 
+To do this change the module source to the github clone repo URL, and add your projects service account key (flattened, e.g. single line) json file to your Github Repo's secrets:
+
+key=`GOOGLE_CREDENTIALS`
+
+value=`flattened single line .json contents`
+
 
 # References
 [1] https://cloud.google.com/container-registry/docs/quickstart?hl=en-GB
