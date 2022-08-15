@@ -36,6 +36,10 @@ resource "google_cloud_run_service" "default" {
           name  = var.env_6_key
           value = var.env_6_value
         }
+        env {
+          name  = var.env_7_key
+          value = var.env_7_value
+        }
       }
     }
   }
