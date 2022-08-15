@@ -8,8 +8,8 @@ include {
 }
 
 terraform {
-  source = "../modules//cloud-run-no-auth"
-  // source = "git::https://github.com/mgladson/Terraform-Modules-Chainlink.git//modules/gcp/ea-cloud-run-no-auth/"
+  # source = "../modules//cloud-run-no-auth"
+  source = "git::https://github.com/mgladson/Terraform-Modules-Chainlink.git//modules/gcp/ea-cloud-run-no-auth/"
 }
 
 inputs = {
