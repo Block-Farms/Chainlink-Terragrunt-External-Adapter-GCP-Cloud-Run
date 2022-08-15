@@ -1,5 +1,6 @@
+#check your terraform version via "terraform --version"
 terraform {
-  backend "gcs" {}
+  required_version = ">= 1.2.4"
 }
 
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/cloud_run_service#example-usage---cloud-run-service-multiple-environment-variables
@@ -49,7 +50,7 @@ resource "google_cloud_run_service" "default" {
 
 data "google_iam_policy" "noauth" {
   binding {
-    role    = "roles/run.invoker"
+    role    = "roles/run.admin"
     members = [
       "allUsers",
     ]
