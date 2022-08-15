@@ -59,3 +59,11 @@ variable "env_6_key" {
 variable "env_6_value" {
   type    = string
 }
+
+variable "env_7_key" {
+  type    = string
+}
+
+variable "env_7_value" {
+  type    = string
+}
