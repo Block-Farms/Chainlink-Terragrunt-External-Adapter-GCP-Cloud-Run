@@ -29,4 +29,6 @@ inputs = {
   env_5_value     = "debug"
   env_6_key       = "API_VERBOSE"
   env_6_value     = "false"
+  env_7_key       = "API_KEY"
+  env_7_value     = ""
 }
